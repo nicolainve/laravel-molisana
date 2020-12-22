@@ -1,0 +1,17 @@
+body {
+  font-family: "Nunito", sans-serif;
+  color: #333;
+  background: #f2f2f2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
