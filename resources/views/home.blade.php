@@ -2,7 +2,13 @@
 
 @section('content')
 
-@if (! empty($corte))
+@include('partials.cards', ['cards' => $lunghe, 'title' => 'LE LUNGHE']);
+@include('partials.cards', ['cards' => $corte, 'title' => 'LE CORTE']);
+@include('partials.cards', ['cards' => $cortissime, 'title' => 'LE CORTISSIME']);
+
+
+
+{{-- @if (! empty($corte))
 <section class="type container">
     <h2>LE LUNGHE</h2>
 
@@ -11,7 +17,8 @@
             <div class="card">
                 <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
                 <h3>{{ $card['titolo'] }}</h3>
-                <a href="#">Vedi prodotto</a>
+
+                <a href="{{ route('product', $card['id']) }}">Vedi prodotto</a>
             </div>
         @endforeach
     </div>
@@ -27,7 +34,8 @@
             <div class="card">
                 <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
                 <h3>{{ $card['titolo'] }}</h3>
-                <a href="#">Vedi prodotto</a>
+
+                <a href="{{ route('product', $card['id']) }}">Vedi prodotto</a>
             </div>
         @endforeach
     </div>
@@ -43,11 +51,12 @@
             <div class="card">
                 <img src="{{ $card['src'] }}" alt="{{ $card['titolo'] }}">
                 <h3>{{ $card['titolo'] }}</h3>
-                <a href="#">Vedi prodotto</a>
+
+                <a href="{{ route('product', $card['id']) }}">Vedi prodotto</a>
             </div>
         @endforeach
     </div>
 </section>
-@endif
+@endif --}}
 
 @endsection
