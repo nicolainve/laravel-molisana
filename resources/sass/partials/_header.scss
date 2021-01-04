@@ -1,0 +1,21 @@
+.main-header {
+    text-align: center;
+    .nav-header {
+        ul {
+            display: flex;
+            justify-content: center;
+            li {
+                font-size: 24px;
+                font-weight: 300;
+                a {
+                    display: block;
+                    padding: 10px;
+                    color: $text-col;
+                    &.active, &:hover {
+                        background-color: #B3E5FC;
+                    }
+                }
+            }
+        }
+    }
+}
